@@ -39,10 +39,7 @@ int CreateList(SqList &L, int n)
         std::cout << "Name:";
         scanf("%s", Name);
         q->no = No;
-        for (int x = 0; x < 20; x++)
-        {
-            q->name[x] = Name[x];
-        }
+        strcpy(q->name,Name);
         q->grade = Grade;
         *q++;
     }
@@ -93,10 +90,7 @@ int GetElem_Sq(SqList L, int i, Student &S)
     Point += i - 1;
     S.grade = Point->grade;
     S.no = Point->no;
-    for (int j = 0; j < 20; ++j)
-    {
-        S.name[j] = Point->name[j];
-    }
+    strcpy(S.name,Point->name);
     return 1;
 }
 
@@ -111,10 +105,7 @@ int ListInsert_Sq(SqList &L, int i, Student S)
         {
             *Point++;
         }
-        for (int k = 0; k < 20; ++k)
-        {
-            Point->name[k] = S.name[k];
-        }
+        strcpy(Point->name,S.name);
         Point->grade = S.grade;
         Point->no = S.no;
         L.Length += 1;
@@ -130,27 +121,18 @@ int ListInsert_Sq(SqList &L, int i, Student S)
         *pre--;
         for (int j = 1; j <= L.Length - i; ++j)
         {
-            for (int k = 0; k < 20; ++k)
-            {
-                Point->name[k] = pre->name[k];
-            }
+            strcpy(Point->name,pre->name);
             Point->grade = pre->grade;
             Point->no = pre->no;
             *Point--;
             *pre--;
         }
-        for (int k = 0; k < 20; ++k)
-        {
-            Point->name[k] = pre->name[k];
-        }
+        strcpy(Point->name,pre->name);
         Point->grade = pre->grade;
         Point->no = pre->no;
         pre->no = S.no;
         pre->grade = S.grade;
-        for (int k = 0; k < 20; ++k)
-        {
-            pre->name[k] = S.name[k];
-        }
+        strcpy(pre->name,S.name);
         L.Length++;
         return 1;
     }
@@ -172,10 +154,7 @@ int ListDelete_Sq(SqList &L, int i)
     {
         Point->grade = Next->grade;
         Point->no = Next->no;
-        for (int j = 0; j < 20; ++j)
-        {
-            Point->name[j] = Next->name[j];
-        }
+        strcpy(Point->name,Next->name);
         *Point++;
         *Next++;
     }

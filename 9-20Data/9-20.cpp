@@ -44,7 +44,7 @@ int CreateList(SqList &L, int n)
             q->name[x] = Name[x];
         }
         q->grade = Grade;
-        *q++;
+        q++;
     }
 }
 
@@ -54,7 +54,7 @@ int ListTraverse_Sq(SqList L)
     for (int i = 0; i < L.Length; i++)
     {
         printf("No:%d Grade:%d Name:%s\n", q->no, q->grade, q->name);
-        *q++;
+        q++;
     }
 }
 
@@ -109,7 +109,7 @@ int ListInsert_Sq(SqList &L, int i, Student S)
     {
         for (int j = 0; j < L.Length; ++j)
         {
-            *Point++;
+            Point++;
         }
         for (int k = 0; k < 20; ++k)
         {
@@ -127,7 +127,7 @@ int ListInsert_Sq(SqList &L, int i, Student S)
             *Point++;
         }
         Student *pre = Point;
-        *pre--;
+        pre--;
         for (int j = 1; j <= L.Length - i; ++j)
         {
             for (int k = 0; k < 20; ++k)
@@ -176,8 +176,8 @@ int ListDelete_Sq(SqList &L, int i)
         {
             Point->name[j] = Next->name[j];
         }
-        *Point++;
-        *Next++;
+        Point++;
+        Next++;
     }
     L.Length--;
 }
