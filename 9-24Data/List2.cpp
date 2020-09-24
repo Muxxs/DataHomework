@@ -124,6 +124,5 @@ int main(){
     cout << "------" << endl;
     ShowList(List2);
 
-    merge(List1,List2);
-    ShowList(List1);
+
 }
