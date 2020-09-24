@@ -33,7 +33,7 @@ void InitLNode(NodeControl &List,int n){
 status Insert(NodeControl &List,int num,int target){
     if (target>List.size or target<0) return 0;
     LinkList NewPointer = List.Head;
-    for (int i = 0; i < target - 1 ; ++i) {
+    for (int i = 0; i <= target - 1 ; ++i) {
         NewPointer = NewPointer->Next;
     }
     LinkList NewNodePointer = (LinkList)malloc(sizeof(LNode));
@@ -88,12 +88,23 @@ void DelateList(NodeControl &List){
     List.size=0;
 }
 
+int ChangeData(NodeControl &List,int num ,int target){
+    if (target>List.size or target<0) return 0;
+    LinkList NewPointer = List.Head;
+    for (int i = 0; i < target-1; ++i) {
+        NewPointer = NewPointer->Next;
+    }
+    NewPointer->Next->Data = num;
+    return 1;
+}
+
 int main(){
     NodeControl Lists;
     InitLNode(Lists,10);
     Insert(Lists,10,10);
     cout << Lists.size << endl;
     ShowList(Lists);
-    Search(Lists,10);
+    ChangeData(Lists,15,10);
+    Search(Lists,15);
     DelateList(Lists);
 }

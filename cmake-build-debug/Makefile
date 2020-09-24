@@ -123,33 +123,6 @@ DataHomework/fast:
 	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/build
 .PHONY : DataHomework/fast
 
-9-24Data/List.o: 9-24Data/List.cpp.o
-
-.PHONY : 9-24Data/List.o
-
-# target to build an object file
-9-24Data/List.cpp.o:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-24Data/List.cpp.o
-.PHONY : 9-24Data/List.cpp.o
-
-9-24Data/List.i: 9-24Data/List.cpp.i
-
-.PHONY : 9-24Data/List.i
-
-# target to preprocess a source file
-9-24Data/List.cpp.i:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-24Data/List.cpp.i
-.PHONY : 9-24Data/List.cpp.i
-
-9-24Data/List.s: 9-24Data/List.cpp.s
-
-.PHONY : 9-24Data/List.s
-
-# target to generate assembly for a file
-9-24Data/List.cpp.s:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-24Data/List.cpp.s
-.PHONY : 9-24Data/List.cpp.s
-
 9-24Data/List2.o: 9-24Data/List2.cpp.o
 
 .PHONY : 9-24Data/List2.o
@@ -186,9 +159,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataHomework"
-	@echo "... 9-24Data/List.o"
-	@echo "... 9-24Data/List.i"
-	@echo "... 9-24Data/List.s"
 	@echo "... 9-24Data/List2.o"
 	@echo "... 9-24Data/List2.i"
 	@echo "... 9-24Data/List2.s"
