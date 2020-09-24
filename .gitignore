@@ -1,8 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
-9-24Data/
 cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/tmp/
 cmake-build-debug/CMakeFiles/3.16.5/CompilerIdCXX/tmp/
 cmake-build-debug/CMakeFiles/CMakeTmp/
-
-!/9-24Data/List.cpp
-!/9-24Data/List2.cpp
