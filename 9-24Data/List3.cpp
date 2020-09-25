@@ -28,13 +28,14 @@ void InitLNode(NodeControl &List,int n){
         Point->Data[1] = 0;
         Point = Point->Next;
     }
+    Point->Next=NULL;
     List.size = n;
 }
 
 status Insert(NodeControl &List,int num[2],int target){
     if (target>List.size or target<0) return 0;
     LinkList NewPointer = List.Head;
-    for (int i = 0; i <= target - 1 ; ++i) {
+    for (int i = 0; i < target - 1 ; ++i) {
         NewPointer = NewPointer->Next;
     }
     LinkList NewNodePointer = (LinkList)malloc(sizeof(LNode));
