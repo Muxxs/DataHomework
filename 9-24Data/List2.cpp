@@ -94,16 +94,40 @@ int ChangeData(NodeControl &List,int num ,int target){
 }
 
 int merge(NodeControl &List1,NodeControl &List2){
-    LinkList Pointer1=List1.Head,Pointer2=List2.Head,Mid;
-    while (Pointer1->Next!=NULL && Pointer2->Next!=NULL){
+    LinkList Pointer1=List1.Head->Next,Pointer2=List2.Head->Next,Mid;
+    LinkList PointerPre1=List1.Head;
+    while (Pointer1!=NULL && Pointer2!=NULL){
         if (Pointer1->Data <= Pointer2->Data){
+            if (Pointer1->Next!= NULL) {
+                if (Pointer1->Next->Data <= Pointer2->Data) {
+                    Pointer1 = Pointer1->Next;
+                    PointerPre1 = PointerPre1->Next;
+                    continue;
+                }
+            }
             Mid = Pointer2->Next;
-            Pointer2 -> Next = Pointer1->Next;
+            PointerPre1 = Pointer1;
+            Pointer2 -> Next =Pointer1->Next;
             Pointer1 -> Next = Pointer2;
+            Pointer1 = Pointer2;
+            Pointer2 = Mid;
+            List1.size++;
+        } else{
+            Mid = Pointer2;
+            PointerPre1->Next = Pointer2;
+            Pointer2->Next = Pointer1;
+            Pointer2 = Mid;
+            List1.size++;
         }
     }
-    if (Pointer1->Next==NULL){
-        Pointer1->Next = Pointer2;
+}
+
+void insert(NodeControl &List){
+    int n,num;
+    cin >> n;
+    for (int i = 0; i < n; ++i) {
+        cin >> num;
+        Insert(List,num,List.size);
     }
 }
 
@@ -111,18 +135,12 @@ int main(){
     NodeControl List1,List2;
     InitLNode(List1,0);
     InitLNode(List2,0);
-    for (int i = 1; i <= 10; ++i) {
-        if (i%2==0){
-            Insert(List1,i,List1.size);
-            cout << "在 List1 中的 第 " << List1.size << " 位插入 了数字 " << i << endl;
-        } else{
-            Insert(List2,i,List2.size);
-            cout << "在 List2 中的 第 " << List2.size << " 位插入 了数字 " << i << endl;
-        }
-    }
+    insert(List1);
+    insert(List2);
     ShowList(List1);
     cout << "------" << endl;
     ShowList(List2);
-
-
+    merge(List1,List2);
+    cout << "------" << endl;
+    ShowList(List1);
 }

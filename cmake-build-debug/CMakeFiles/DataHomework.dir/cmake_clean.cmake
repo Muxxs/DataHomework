@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DataHomework.dir/9-24Data/List2.cpp.o"
+  "CMakeFiles/DataHomework.dir/9-24Data/List3.cpp.o"
   "DataHomework"
   "DataHomework.pdb"
 )

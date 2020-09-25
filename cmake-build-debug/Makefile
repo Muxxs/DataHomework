@@ -123,32 +123,32 @@ DataHomework/fast:
 	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/build
 .PHONY : DataHomework/fast
 
-9-24Data/List2.o: 9-24Data/List2.cpp.o
+9-24Data/List3.o: 9-24Data/List3.cpp.o
 
-.PHONY : 9-24Data/List2.o
+.PHONY : 9-24Data/List3.o
 
 # target to build an object file
-9-24Data/List2.cpp.o:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-24Data/List2.cpp.o
-.PHONY : 9-24Data/List2.cpp.o
+9-24Data/List3.cpp.o:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-24Data/List3.cpp.o
+.PHONY : 9-24Data/List3.cpp.o
 
-9-24Data/List2.i: 9-24Data/List2.cpp.i
+9-24Data/List3.i: 9-24Data/List3.cpp.i
 
-.PHONY : 9-24Data/List2.i
+.PHONY : 9-24Data/List3.i
 
 # target to preprocess a source file
-9-24Data/List2.cpp.i:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-24Data/List2.cpp.i
-.PHONY : 9-24Data/List2.cpp.i
+9-24Data/List3.cpp.i:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-24Data/List3.cpp.i
+.PHONY : 9-24Data/List3.cpp.i
 
-9-24Data/List2.s: 9-24Data/List2.cpp.s
+9-24Data/List3.s: 9-24Data/List3.cpp.s
 
-.PHONY : 9-24Data/List2.s
+.PHONY : 9-24Data/List3.s
 
 # target to generate assembly for a file
-9-24Data/List2.cpp.s:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-24Data/List2.cpp.s
-.PHONY : 9-24Data/List2.cpp.s
+9-24Data/List3.cpp.s:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-24Data/List3.cpp.s
+.PHONY : 9-24Data/List3.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataHomework"
-	@echo "... 9-24Data/List2.o"
-	@echo "... 9-24Data/List2.i"
-	@echo "... 9-24Data/List2.s"
+	@echo "... 9-24Data/List3.o"
+	@echo "... 9-24Data/List3.i"
+	@echo "... 9-24Data/List3.s"
 .PHONY : help
 
 

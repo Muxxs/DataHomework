@@ -98,6 +98,15 @@ int ChangeData(NodeControl &List,int num ,int target){
     return 1;
 }
 
+void insert(NodeControl &List){
+    int n,num;
+    cin >> n;
+    for (int i = 0; i < n; ++i) {
+        cin >> num;
+        Insert(List,num,List.size);
+    }
+}
+
 int main(){
     NodeControl Lists;
     InitLNode(Lists,10);
