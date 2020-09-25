@@ -27,6 +27,7 @@ void InitLNode(NodeControl &List,int n){
         Point->Data = 0;
         Point = Point->Next;
     }
+    Point->Next=NULL;
     List.size = n;
 }
 
