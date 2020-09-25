@@ -130,6 +130,7 @@ void Deal(NodeControl La,NodeControl Lb,NodeControl &Lc){
     }
 }
 
+
 int main(){
     NodeControl La,Lb,Lc;
     InitLNode(La,0);
