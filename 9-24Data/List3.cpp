@@ -18,7 +18,6 @@ typedef struct NodeControl{
     int size;
 };
 
-
 void InitLNode(NodeControl &List,int n){
     List.Head = (LinkList)malloc(sizeof(LNode)*n);
     LinkList Point = List.Head;
@@ -37,10 +36,15 @@ status Insert(NodeControl &List,int num[2],int target){
     LinkList NewPointer = List.Head;
     for (int i = 0; i < target - 1 ; ++i) {
         NewPointer = NewPointer->Next;
+        if (NewPointer->Next==NULL) break;
     }
     LinkList NewNodePointer = (LinkList)malloc(sizeof(LNode));
-    NewNodePointer->Next = NewPointer->Next;
-    NewPointer ->Next = NewNodePointer;
+    if (NewPointer==NULL){
+        NewNodePointer->Next=NULL;
+    } else {
+        NewNodePointer->Next = NewPointer->Next;
+    }
+    NewPointer -> Next = NewNodePointer;
     NewNodePointer->Data[0] = num[0];
     NewNodePointer->Data[1] = num[1];
     List.size++;
@@ -62,28 +66,19 @@ void ShowList(NodeControl List){
     LinkList Point = List.Head;
     for (int i = 0; i < List.size; ++i) {
         Point = Point->Next;
-        cout << "Num "<< i+1 << " : " << Point->Data[0] << "," << Point->Data[1] <<endl;
+        cout << "Num "<< i+1 << " : 指数:" << Point->Data[0] << " 系数:" << Point->Data[1] <<endl;
+        if (Point->Next==NULL) break;
     }
-}
-
-
-void DelateList(NodeControl &List){
-    LinkList Pointer = List.Head,NextNode;
-    while (Pointer->Next!=NULL){
-        NextNode=Pointer->Next;
-        free(Pointer);
-        Pointer = NextNode;
-    }
-    free(Pointer);
-    List.Head=NULL;
-    List.size=0;
 }
 
 void insert(NodeControl &List){
     int n,num[2];
+    cout << "请输入个数:" ;
     cin >> n;
     for (int i = 0; i < n; ++i) {
+        cout <<  "请输入指数:";
         cin >> num[0];
+        cout << "请输入系数:";
         cin >> num[1];
         cout << "----" << endl;
         Insert(List,num,List.size);
@@ -92,9 +87,8 @@ void insert(NodeControl &List){
 
 void Deal(NodeControl La,NodeControl Lb,NodeControl &Lc){
     LinkList PointA = La.Head->Next,PointB = Lb.Head->Next,PointC = Lc.Head;
-    int CountLc=0;
     int NewNum[2];
-    bool IsInsert= false;
+    bool IsInsert;
     if (PointB==NULL){
         PointC->Next = La.Head->Next;
     }else if (PointA==NULL){
@@ -102,11 +96,8 @@ void Deal(NodeControl La,NodeControl Lb,NodeControl &Lc){
     }
     while (PointA!=NULL){
         PointB = Lb.Head->Next;
-        CountLc == 0;
+        bool IsInsert= false;
         while (PointB!=NULL){
-            CountLc++;
-            cout << "PointB:" << PointB->Data[0] << endl;
-            cout << "PointA:" << PointB->Data[0] << endl;
             if (PointB->Data[0]==PointA->Data[0]){
                 NewNum[0]=PointB->Data[0];
                 NewNum[1]=PointB->Data[1]+PointA->Data[1];
@@ -120,12 +111,37 @@ void Deal(NodeControl La,NodeControl Lb,NodeControl &Lc){
         }
         if (IsInsert){
             PointA = PointA->Next;
-            IsInsert= false;
             continue;
         } else{
             Insert(Lc,PointA->Data,Lc.size);
             Lc.size++;
             PointA = PointA->Next;
+        }
+    }
+
+    PointB = Lb.Head->Next;
+    while (PointB->Next!=NULL){
+        IsInsert= false;
+        PointC = Lc.Head->Next;
+        while (PointC!=NULL){
+            if (PointB->Data[0]==PointC->Data[0]){
+                IsInsert = false;
+                break;
+            } else if(PointC->Next==NULL){
+                IsInsert = true;
+                break;
+            } else {
+                PointC=PointC->Next;
+            }
+        }
+        if (IsInsert){
+            NewNum[0]=PointB->Data[0];
+            NewNum[1]=PointB->Data[1];
+            Insert(Lc,NewNum,Lc.size);
+            PointB = PointB->Next;
+            continue;
+        } else{
+            PointB = PointB->Next;
         }
     }
 }
@@ -140,8 +156,6 @@ int main(){
     insert(La);
     cout << "Lb Insert" << endl;
     insert(Lb);
-    ShowList(La);
-    ShowList(Lb);
     Deal(La,Lb,Lc);
     cout << "Lc Out" << endl;
     ShowList(Lc);
