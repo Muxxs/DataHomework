@@ -123,33 +123,6 @@ DataHomework/fast:
 	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/build
 .PHONY : DataHomework/fast
 
-9-30/作业/2/main.o: 9-30/作业/2/main.cpp.o
-
-.PHONY : 9-30/作业/2/main.o
-
-# target to build an object file
-9-30/作业/2/main.cpp.o:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-30/作业/2/main.cpp.o
-.PHONY : 9-30/作业/2/main.cpp.o
-
-9-30/作业/2/main.i: 9-30/作业/2/main.cpp.i
-
-.PHONY : 9-30/作业/2/main.i
-
-# target to preprocess a source file
-9-30/作业/2/main.cpp.i:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-30/作业/2/main.cpp.i
-.PHONY : 9-30/作业/2/main.cpp.i
-
-9-30/作业/2/main.s: 9-30/作业/2/main.cpp.s
-
-.PHONY : 9-30/作业/2/main.s
-
-# target to generate assembly for a file
-9-30/作业/2/main.cpp.s:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-30/作业/2/main.cpp.s
-.PHONY : 9-30/作业/2/main.cpp.s
-
 9-30/作业/3/main.o: 9-30/作业/3/main.cpp.o
 
 .PHONY : 9-30/作业/3/main.o
@@ -186,9 +159,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataHomework"
-	@echo "... 9-30/作业/2/main.o"
-	@echo "... 9-30/作业/2/main.i"
-	@echo "... 9-30/作业/2/main.s"
 	@echo "... 9-30/作业/3/main.o"
 	@echo "... 9-30/作业/3/main.i"
 	@echo "... 9-30/作业/3/main.s"

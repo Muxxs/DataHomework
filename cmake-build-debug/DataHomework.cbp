@@ -80,9 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/wangjiao/Desktop/编程相关/DataHomework/9-30/作业/2/main.cpp">
-			<Option target="DataHomework"/>
-		</Unit>
 		<Unit filename="/Users/wangjiao/Desktop/编程相关/DataHomework/9-30/作业/3/main.cpp">
 			<Option target="DataHomework"/>
 		</Unit>

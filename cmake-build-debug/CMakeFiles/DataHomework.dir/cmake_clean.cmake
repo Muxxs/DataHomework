@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DataHomework.dir/9-30/作业/2/main.cpp.o"
   "CMakeFiles/DataHomework.dir/9-30/作业/3/main.cpp.o"
   "DataHomework"
   "DataHomework.pdb"
