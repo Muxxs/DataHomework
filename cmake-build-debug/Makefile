@@ -123,32 +123,59 @@ DataHomework/fast:
 	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/build
 .PHONY : DataHomework/fast
 
-9-24Data/List3.o: 9-24Data/List3.cpp.o
+9-30/作业/2/main.o: 9-30/作业/2/main.cpp.o
 
-.PHONY : 9-24Data/List3.o
+.PHONY : 9-30/作业/2/main.o
 
 # target to build an object file
-9-24Data/List3.cpp.o:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-24Data/List3.cpp.o
-.PHONY : 9-24Data/List3.cpp.o
+9-30/作业/2/main.cpp.o:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-30/作业/2/main.cpp.o
+.PHONY : 9-30/作业/2/main.cpp.o
 
-9-24Data/List3.i: 9-24Data/List3.cpp.i
+9-30/作业/2/main.i: 9-30/作业/2/main.cpp.i
 
-.PHONY : 9-24Data/List3.i
+.PHONY : 9-30/作业/2/main.i
 
 # target to preprocess a source file
-9-24Data/List3.cpp.i:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-24Data/List3.cpp.i
-.PHONY : 9-24Data/List3.cpp.i
+9-30/作业/2/main.cpp.i:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-30/作业/2/main.cpp.i
+.PHONY : 9-30/作业/2/main.cpp.i
 
-9-24Data/List3.s: 9-24Data/List3.cpp.s
+9-30/作业/2/main.s: 9-30/作业/2/main.cpp.s
 
-.PHONY : 9-24Data/List3.s
+.PHONY : 9-30/作业/2/main.s
 
 # target to generate assembly for a file
-9-24Data/List3.cpp.s:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-24Data/List3.cpp.s
-.PHONY : 9-24Data/List3.cpp.s
+9-30/作业/2/main.cpp.s:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-30/作业/2/main.cpp.s
+.PHONY : 9-30/作业/2/main.cpp.s
+
+9-30/作业/3/main.o: 9-30/作业/3/main.cpp.o
+
+.PHONY : 9-30/作业/3/main.o
+
+# target to build an object file
+9-30/作业/3/main.cpp.o:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-30/作业/3/main.cpp.o
+.PHONY : 9-30/作业/3/main.cpp.o
+
+9-30/作业/3/main.i: 9-30/作业/3/main.cpp.i
+
+.PHONY : 9-30/作业/3/main.i
+
+# target to preprocess a source file
+9-30/作业/3/main.cpp.i:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-30/作业/3/main.cpp.i
+.PHONY : 9-30/作业/3/main.cpp.i
+
+9-30/作业/3/main.s: 9-30/作业/3/main.cpp.s
+
+.PHONY : 9-30/作业/3/main.s
+
+# target to generate assembly for a file
+9-30/作业/3/main.cpp.s:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/9-30/作业/3/main.cpp.s
+.PHONY : 9-30/作业/3/main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataHomework"
-	@echo "... 9-24Data/List3.o"
-	@echo "... 9-24Data/List3.i"
-	@echo "... 9-24Data/List3.s"
+	@echo "... 9-30/作业/2/main.o"
+	@echo "... 9-30/作业/2/main.i"
+	@echo "... 9-30/作业/2/main.s"
+	@echo "... 9-30/作业/3/main.o"
+	@echo "... 9-30/作业/3/main.i"
+	@echo "... 9-30/作业/3/main.s"
 .PHONY : help
 
 

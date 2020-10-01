@@ -3,3 +3,5 @@
 //
 
 #include "Low.h"
+
+void Low(){}

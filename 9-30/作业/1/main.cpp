@@ -3,14 +3,12 @@
 //
 
 #include <iostream>
+#include "High.cpp"
+#include "Middle.cpp"
+#include "Low.cpp"
+#include "Quit.cpp"
 
 using namespace std;
-
-void High(){}
-
-void Middle(){}
-
-void Low() {}
 
 void Quit() {}
 

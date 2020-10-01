@@ -5,4 +5,8 @@
 #ifndef DATAHOMEWORK_A1_H
 #define DATAHOMEWORK_A1_H
 
+struct s1{
+
+};
+
 #endif //DATAHOMEWORK_A1_H

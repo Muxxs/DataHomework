@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1601435137 source:d:\cpp\jose3\assign.cpp
+	<iostream>
+	<iomanip>
+	"quanjubianliang.h"
+
+1601436473 d:\cpp\jose3\quanjubianliang.h
+
+1601435598 source:d:\cpp\jose3\count.cpp
+	<iostream>
+	<iomanip>
+	"quanjubianliang.h"
+
+1601435137 source:d:\cpp\jose3\initial.cpp
+	<iostream>
+	<iomanip>
+	"quanjubianliang.h"
+
+1601436666 source:d:\cpp\jose3\main.cpp
+	<iostream>
+	<iomanip>
+	"quanjubianliang.h"
+	"a1.h"
+	"a2.h"
+	"a3.h"
+	"a4.h"
+
+1601435396 d:\cpp\jose3\a1.h
+
+1601435396 d:\cpp\jose3\a2.h
+
+1601435396 d:\cpp\jose3\a3.h
+
+1601435396 d:\cpp\jose3\a4.h
+
+1601435550 source:d:\cpp\jose3\process.cpp
+	<iostream>
+	<iomanip>
+	"quanjubianliang.h"
+	"a3.h"
+

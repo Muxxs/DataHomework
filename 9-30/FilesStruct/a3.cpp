@@ -3,3 +3,8 @@
 //
 
 #include "a3.h"
+
+void f1();
+void f3(){
+    f1();
+}//--end f3

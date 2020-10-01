@@ -3,3 +3,5 @@
 //
 
 #include "Middle.h"
+
+void Middle(){}
