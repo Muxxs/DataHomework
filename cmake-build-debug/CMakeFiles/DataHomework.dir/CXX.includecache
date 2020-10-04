@@ -6,9 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Users/wangjiao/Desktop/编程相关/DataHomework/9-30/作业/2/main.cpp
+/Users/wangjiao/Desktop/编程相关/DataHomework/9-30/作业/3/decode.cpp
+decode.h
+/Users/wangjiao/Desktop/编程相关/DataHomework/9-30/作业/3/decode.h
+iostream
+-
+
+/Users/wangjiao/Desktop/编程相关/DataHomework/9-30/作业/3/decode.h
+
+/Users/wangjiao/Desktop/编程相关/DataHomework/9-30/作业/3/encode.cpp
+encode.h
+/Users/wangjiao/Desktop/编程相关/DataHomework/9-30/作业/3/encode.h
+iostream
+-
+
+/Users/wangjiao/Desktop/编程相关/DataHomework/9-30/作业/3/encode.h
+
+/Users/wangjiao/Desktop/编程相关/DataHomework/9-30/作业/3/main.cpp
 iostream
 -
 string
 -
+encode.cpp
+/Users/wangjiao/Desktop/编程相关/DataHomework/9-30/作业/3/encode.cpp
+decode.cpp
+/Users/wangjiao/Desktop/编程相关/DataHomework/9-30/作业/3/decode.cpp
 

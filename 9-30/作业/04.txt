@@ -1,0 +1,328 @@
+（11）以下叙述中正确的是（ A ）。
+A）C 程序的基本组成单位是语句             B）C 程序中的每一行只能写一条语句
+C）简单C 语句必须以分号结束                D）C 语句必须在一行内写完
+
+（12）计算机能直接执行的程序是（ D ）。
+A）源程序 B）目标程序 C）汇编程序 D）可执行程序
+
+（13）以下选项中不能作为C 语言合法常量的是（ D ）。
+A）'cd' B）0.1e+6 C）"\a" D）'\011'
+
+（14）以下选项中正确的定义语句是（ C ）。
+A）double a; b; B）double a=b=7; C）double a=7, b=7; D）double, a, b;
+
+（15）以下不能正确表示代数式2abcd的C 语言表达式是（  ）。
+A）2*a*b/c/d   B）a*b/c/d*2     C）a/c/d*b*2    D）2*a*b/c*d
+
+（16）C 源程序中不能表示的数制是（ A ）。
+A）二进制 B）八进制 C）十进制 D）十六进制
+
+（17）若有表达式(w)?(--x):(++y)，则其中与w 等价的表达式是（ B ）。
+A）w==l B）w==0 C）w!=l D）w!=0
+
+（18）执行以下程序段后，w 的值为（ D ）。
+int w='A', x=14, y=15;
+w=((x || y)&&(w<'a'));
+A）-1      B）NULL      C）l     D）0
+
+（19）若变量已正确定义为int 型，要通过语句scanf("%d, %d, %d", &a, &b, &c)；给a 赋值
+1、给b 赋值2、给c 赋值3，以下输入形式中错误的是（ ò 代表一个空格符）（  ）。
+A）ò ò ò 1,2,3<回车> B）1 ò 2 ò 3<回车>
+C）1,ò ò ò 2,ò ò ò 3<回车> D）1,2,3<回车>
+
+（20）有以下程序段
+int a, b, c;
+a=10; b=50; c=30;
+if (a>b) a=b, b=c; c=a;
+printf("a=%d b=%d c=%d\n”, a, b, c);
+程序的输出结果是（ ）。
+A）a=10 b=50 c=10 B）a=10 b=50 c=30 C）a=10 b=30 c=10 D）a=50 b=30 c=50
+
+（21）若有定义语句：int m[]={5,4,3,2,1},i=4;，则下面对m 数组元素的引用中错误的是（ ）。
+A）m[--i] B）m[2*2] C）m[m[0]] D）m[m[i]]
+
+（22）下面的函数调用语句中func 函数的实参个数是（ ）。
+func (f2(v1, v2), (v3, v4, v5), (v6, max(v7, v8)));
+A）3 B）4 C）5 D）8
+
+（23）若有定义语句：double x[5]={1.0,2.0,3.0,4.0,5.0}, *p=x；则错误引用x 数组元素的是（ ）。
+A）*p B）x[5] C）*(p+1) D）*x
+
+（24）若有定义语句：char s[10]="1234567\0\0";，则strlen(s)的值是（ ）。
+A）7 B）8 C）9 D）10
+
+（25）以下叙述中错误的是（ ）。
+A）用户定义的函数中可以没有return 语句
+B）用户定义的函数中可以有多个return 语句，以便可以调用一次返回多个函数值
+C）用户定义的函数中若没有return 语句，则应当定义函数为void 类型
+D）函数的return 语句中可以没有表达式
+
+（26）以下关于宏的叙述中正确的是（ ）。
+A）宏名必须用大写字母表示
+B）宏定义必须位于源程序中所有语句之前
+C）宏替换没有数据类型限制
+D）宏调用比函数调用耗费时间
+
+（27）有以下程序
+#include<stdio.h>
+main()
+{ int i, j;
+for(i=3; i>=l; i--)
+{ for(j=1; j<=2; j++) printf("%d", i+j);
+printf("\n");
+}
+}
+程序的运行结果是（ ）。
+A）2 3 4     B）4 3 2
+    3 4 5            5 4 3
+C）2 3       D）4 5
+     3 4             3 4
+    4 5              2 3
+
+（28）有以下程序
+#include <stdio.h>
+main()
+{ int x=l, y=2, z=3;
+if(x>y)
+if(y<z) printf("%d", ++z);
+else printf("%d", ++y);
+printf("%d\n", x++);
+}
+程序的运行结果是（ ）。
+A）331 B）41 C）2 D）1
+
+（29）有以下程序
+# include <stdio.h>
+main()
+{ int i=5;
+do
+{ if (i%3=1)
+if (i%5==2)
+{ printf("*%d", i); break;}
+i++;
+} while(i!=0);
+printf("\n");
+}
+
+程序的运行结果是（ ）。
+A）*7     B）*3*5     C）*5    D）*2*6
+
+（30）有以下程序
+#include <stdio.h>
+int fun(int a,int b)
+{ if(b==0) return a;
+else return(fun(--a,--b));
+}
+main()
+{ printf("%d\n", fun(4,2));}
+程序的运行结果是（ ）。
+A）1 B）2 C）3 D）4
+
+（31）有以下程序
+#include <stdio.h>
+#include <stdlib.h>
+int fun(int n)
+{ int *p;
+p=(int*)malloc(sizeof(int));
+*p=n; return *p;
+}
+main()
+{ int a;
+a = fun(10); printf("%d\n", a+fun(10));
+}
+程序的运行结果是（ ）。
+A）0 B）10 C）20 D）出错
+
+（32）有以下程序
+#include <stdio.h>
+void fun(int a, int b)
+{ int t;
+t=a; a=b; b=t;
+}
+main()
+{ int c[10]={1,2,3,4,5,6,7,8,9,0), i;
+for (i=0; i<10; i+=2) fun(c[i], c[i+l]);
+for (i=0; i<10; i++) printf("%d,", c[i]);
+printf("\n");
+}
+程序的运行结果是（ ）。
+A）l,2,3,4,5,6,7,8,9,0, B）2,l,4,3,6,5,8,7,0,9,
+ C）0,9,8,7,6,5,4,3,2,1, D）0,1,2,3,4,5,6,7,8,9,
+
+（33）有以下程序
+#include <stdio.h>
+struct st
+{ int x, y;) data[2]={l,10,2,20};
+main()
+{ struct st *p=data;
+printf("%d,", p->y); printf("%d\n",(++p)->x);
+}
+程序的运行结果是（ ）。
+A）10,1 B）20,1 C）10,2 D）20,2
+
+（34）有以下程序
+#include <stdio.h>
+void fun(int a[], int n)
+{ int i, t;
+for(i=0; i<n/2; i++) {t=a[i]; a[i]=a[n-1-i]; a[n-1-i]=t;}
+}
+main()
+{ int k[10]={1,2,3,4,5,6,7,8,9,10}, i;
+fun(k,5);
+for(i=2; i<8; i++) printf("%d", k[i]);
+printf("\n");
+}
+程序的运行结果是（ ）。
+A）345678 B）876543 C）1098765 D）321678
+
+（35）有以下程序
+#include <stdio.h>
+#define N 4
+void fun(int a[][N], int b[])
+{ int i;
+for(i=0; i<N; i++) b[i]=a[i][i];
+}
+main()
+{ int x[][N]={{1,2,3),{4),{5,6,7,8),{9,10}},y[N], i;
+fun(x,y);
+for (i=0; i<N; i++) printf("%d,", y[i]);
+printf("\n");
+}
+程序的运行结果是（ ）。
+A）l,2,3,4, B）1,0,7,0, C）1,4,5,9, D）3,4,8,10,
+
+（36）有以下程序
+#include <stdio.h>
+int fun(int (*s)[4],int n, int k)
+{ int m, i;
+m=s[0][k];
+for(i=l; i<n; i++) if(s[i][k]>m) m=s[i][k];
+return m;
+}
+main()
+{ int a[4][4]={{1,2,3,4),{11,12,13,14},{2l,22,23,24},{31,32,33,34}};
+printf("%d\n", fun(a,4,0));
+}
+程序的运行结果是（ ）。
+A）4 B）34 C）31 D）32
+
+（37）有以下程序
+#include <stdio.h>
+main()
+{ struct STU { char name[9]; char sex; double score[2]; };
+struct STU a={"Zhao",'m',85.0,90.0), b={"Qian",'f',95.0,92.0);
+b=a;
+printf("%s,%c,%2.0f,%2.0f\n",b.name,b.sex,b.score[0],b.score[1]);
+}
+程序的运行结果是（ ）。
+A）Qian,f,95,92 B）Qian,m,85,90 C）Zhao,f,95,92 D）Zhao,m,85,90
+
+
+（39）有以下程序
+#include <stdio.h>
+main()
+{ char a=4;
+printf("%d\n", a=a<<1);
+}
+程序的运行结果是（ ）。
+A）40 B）16 C）8 D）4
+
+（40）有以下程序
+#include <stdio.h>
+main()
+{ FILE *pf;
+char *s1="China",*s2="Beijing";
+pf=fopen("abc.dat","wb+");
+fwrite(s2,7,l,pf);
+rewind(pf); /*文件位置指针回到文件开头*/
+fwrite(s1,5,1,pf);
+fclose(pf);
+}
+以上程序执行后abc.dat 文件的内容是（ ）。
+B）China B）Chinang C）ChinaBeijing D）BeijingChina
+
+二、填空题（每空 2 分，共30 分）
+
+（6）设变量a 和b 已正确定义并赋初值。请写出与a-=a+b 等价的赋值表达式【6】。
+（7）若整型变量a 和b 中的值分别为7 和9，要求按以下格式输出a 和b 的值：
+a=7
+b=9
+请完成输出语句：printf (" 【7】",a,b);。
+
+（8）以下程序的输出结果是【8】。
+#include <stdio.h>
+main()
+{ int i,j,sum;
+for(i=3;i>=1;i--)
+{ sum=0;
+for(j=1;j<=i;j++) sum+=i*j;
+}
+printf("%d\n",sum);
+}
+
+（9）以下程序的输出结果是【9】。
+#include <stdio.h>
+main()
+{ int j, a[]={1,3,5,7,9,11,13,15},*p=a+5;
+for(j=3; j; j--)
+{ switch(j)
+{ case 1:
+case 2: printf("%d",*p++); break;
+case 3: printf("%d",*(--p));
+}
+}
+}
+
+（10）以下程序的输出结果是【10】。
+#include <stdio.h>
+#define N 5
+int fun(int *s, int a, int n)
+{ int j;
+*s=a; j=n;
+while(a!=s[j])j--;
+return j;
+}
+main()
+{ int s[N+1]; int k;
+for(k=l; k<=N; k++) s[k]=k+l;
+printf("%d\n",fun(s,4,N));
+}
+（11）以下程序的输出结果是【11】。
+#include <stdio.h>
+int fun(int x)
+{ static int t=0;
+return(t +=x);
+}
+main()
+{ int s,i;
+for(i=l;i<=5;i++) s=fun(i);
+printf("%d\n",s);
+}
+（12）以下程序按下面指定的数据给x 数组的下三角置数，并按如下形式输出，请填空。
+4
+3 7
+2 6 9
+1 5 8 10
+#include <stdio.h>
+main()
+{ int x[4][4],n=0,i,j;
+for(j=0;j<4;j++)
+for(i=3;i>=j; 【12】) {n++;x[i][j]= 【13】;}
+for(i=0;i<4;i++)
+{ for(j=0;j<=i;j++) printf("%3 d",x[i][j]);
+printf("\n");
+}
+}
+（13）以下程序的功能是：通过函数func 输入字符并统计输入字符的个数。输入时用字符
+@作为输入结束标志。请填空。
+#include <stdio.h>
+long 【14】 ; /* 函数说明语句 */
+main()
+{ long n;
+n=func(); printf("n=%ld\n",n);
+}
+long func()
+{ long m;
+for( m=0; getchar()!='@'; 【15】);
+retum m;
+}
