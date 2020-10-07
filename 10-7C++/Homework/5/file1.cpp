@@ -5,9 +5,10 @@
 #include <iostream>
 #include "arraymax.cpp"
 
-
-
 int main(){
-    student S;
-    S.set_value();
+    Array_max array;
+    array.set_value();
+    array.show_value();
+    array.max_value();
+    return 0;
 }

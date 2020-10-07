@@ -6,14 +6,14 @@
 #define DATAHOMEWORK_ARRAYMAX_H
 #include <iostream>
 using namespace std;
-struct student{
+struct Array_max{
 public:
-    void display();
     void set_value();
+    void show_value();
+    void max_value();
 
 private:
-    int num;
-    string name;
-    string sex;
+    int array[10];
+    int max=0;
 };
 #endif //DATAHOMEWORK_ARRAYMAX_H

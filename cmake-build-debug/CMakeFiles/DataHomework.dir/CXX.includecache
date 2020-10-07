@@ -6,13 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/wangjiao/Desktop/编程相关/DataHomework/10-7C++/Homework/6/main.cpp
-iostream
--
-rectangle.h
-/Users/wangjiao/Desktop/编程相关/DataHomework/10-7C++/Homework/6/rectangle.h
+/Users/wangjiao/Desktop/编程相关/DataHomework/10-7C++/Homework/5/arraymax.cpp
+arraymax.h
+/Users/wangjiao/Desktop/编程相关/DataHomework/10-7C++/Homework/5/arraymax.h
 
-/Users/wangjiao/Desktop/编程相关/DataHomework/10-7C++/Homework/6/rectangle.h
+/Users/wangjiao/Desktop/编程相关/DataHomework/10-7C++/Homework/5/arraymax.h
 iostream
 -
+
+/Users/wangjiao/Desktop/编程相关/DataHomework/10-7C++/Homework/5/file1.cpp
+iostream
+-
+arraymax.cpp
+/Users/wangjiao/Desktop/编程相关/DataHomework/10-7C++/Homework/5/arraymax.cpp
 

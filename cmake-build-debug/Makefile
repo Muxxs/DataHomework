@@ -123,32 +123,32 @@ DataHomework/fast:
 	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/build
 .PHONY : DataHomework/fast
 
-10-7C++/Homework/6/main.o: 10-7C++/Homework/6/main.cpp.o
+10-7C++/Homework/5/file1.o: 10-7C++/Homework/5/file1.cpp.o
 
-.PHONY : 10-7C++/Homework/6/main.o
+.PHONY : 10-7C++/Homework/5/file1.o
 
 # target to build an object file
-10-7C++/Homework/6/main.cpp.o:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-7C++/Homework/6/main.cpp.o
-.PHONY : 10-7C++/Homework/6/main.cpp.o
+10-7C++/Homework/5/file1.cpp.o:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-7C++/Homework/5/file1.cpp.o
+.PHONY : 10-7C++/Homework/5/file1.cpp.o
 
-10-7C++/Homework/6/main.i: 10-7C++/Homework/6/main.cpp.i
+10-7C++/Homework/5/file1.i: 10-7C++/Homework/5/file1.cpp.i
 
-.PHONY : 10-7C++/Homework/6/main.i
+.PHONY : 10-7C++/Homework/5/file1.i
 
 # target to preprocess a source file
-10-7C++/Homework/6/main.cpp.i:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-7C++/Homework/6/main.cpp.i
-.PHONY : 10-7C++/Homework/6/main.cpp.i
+10-7C++/Homework/5/file1.cpp.i:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-7C++/Homework/5/file1.cpp.i
+.PHONY : 10-7C++/Homework/5/file1.cpp.i
 
-10-7C++/Homework/6/main.s: 10-7C++/Homework/6/main.cpp.s
+10-7C++/Homework/5/file1.s: 10-7C++/Homework/5/file1.cpp.s
 
-.PHONY : 10-7C++/Homework/6/main.s
+.PHONY : 10-7C++/Homework/5/file1.s
 
 # target to generate assembly for a file
-10-7C++/Homework/6/main.cpp.s:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-7C++/Homework/6/main.cpp.s
-.PHONY : 10-7C++/Homework/6/main.cpp.s
+10-7C++/Homework/5/file1.cpp.s:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-7C++/Homework/5/file1.cpp.s
+.PHONY : 10-7C++/Homework/5/file1.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataHomework"
-	@echo "... 10-7C++/Homework/6/main.o"
-	@echo "... 10-7C++/Homework/6/main.i"
-	@echo "... 10-7C++/Homework/6/main.s"
+	@echo "... 10-7C++/Homework/5/file1.o"
+	@echo "... 10-7C++/Homework/5/file1.i"
+	@echo "... 10-7C++/Homework/5/file1.s"
 .PHONY : help
 
 

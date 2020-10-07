@@ -4,17 +4,22 @@
 
 #include "arraymax.h"
 
-void student::display() {
-    cout<< "姓名:" << name << " 性别:" << sex <<" 成绩:" << num << endl;
+void Array_max::set_value() {
+    for (int & i : array) {
+        cin >> i;
+        if (max < i){
+            max = i;
+        }
+    }
 }
 
-void student::set_value(){
-    cout << "姓名:";
-    cin >> name;
-    cout << "性别:";
-    cin >> sex;
-    cout << "成绩:";
-    cin >> num;
-    cout << "Information Insert Finished" << endl;
-    display();
+void Array_max::show_value() {
+    for(int &i : array){
+        cout << i << " ";
+    }
+    cout << endl;
+}
+
+void Array_max::max_value() {
+    cout << "Max : " << max << endl;
 }
