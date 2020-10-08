@@ -106,4 +106,6 @@ int main()
     s=StackTraverse(s);
     cout << "------" << endl;
     Show(s);
+    ClearStack(s);
+    DestroyStack(s);
 }
