@@ -2,7 +2,7 @@
 // Copyright (c) 2020
 // All rights reserved
 #include <iostream>
-
+#include <string>
 using namespace std;
 
 typedef int SElementType;
@@ -10,6 +10,7 @@ typedef int SElementType;
 class Stack
 {
 private:
+    int MaxSize;
     SElementType *top;
     SElementType *base;
     char size;
@@ -19,7 +20,8 @@ public:
     {
         base = (SElementType *)malloc(sizeof(SElementType) * Size);
         top = base;
-        size = Size;
+        MaxSize = Size;
+        size = 0;
     }
     SElementType GetTop()
     {
@@ -28,7 +30,7 @@ public:
     }
     void push(SElementType s)
     {
-        if (size >= 10)
+        if (size >= MaxSize)
         {
             base = (SElementType *)realloc(base, sizeof(SElementType) * (size + 1));
             top = base + size;
@@ -58,7 +60,7 @@ public:
         SElementType *Pointer = base;
         for (int i = 0; i < size; i++)
         {
-            cout << "第" << i + 1 << "个字符是:" << (char)*(Pointer++) << endl;
+            cout << "第" << i + 1 << "个字符是:" << *(Pointer++) << endl;
         }
     }
 };
@@ -73,8 +75,10 @@ int main(int argc, char const *argv[])
 {
     string str = "[([])]";
     Stack s(10);
-    for (int i = 0; i < sizeof(str) / sizeof(str[0]); i++)
+    int size = str.length();
+    for (int i = 0; i < size; i++)
     {
+        if (str[i]==0) continue;
         if (Compare(s.GetTop(),str[i]))
         {
             s.pop();
