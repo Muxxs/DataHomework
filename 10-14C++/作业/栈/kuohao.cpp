@@ -10,28 +10,27 @@ typedef int SElementType;
 class Stack
 {
 private:
-    int MaxSize;
     SElementType *top;
     SElementType *base;
-    int size;
+    char size;
 
 public:
     Stack(int Size)
     {
         base = (SElementType *)malloc(sizeof(SElementType) * Size);
         top = base;
-        MaxSize = Size;
-        size = 0;
+        size = Size;
     }
-    void GetTop()
+    SElementType GetTop()
     {
-        cout << "Top: " << *(top - 1) << endl;
+        //cout << "Top: " << *(top - 1) << endl;
+        return *(top - 1);
     }
     void push(SElementType s)
     {
-        if (size >= MaxSize)
+        if (size >= 10)
         {
-            base = (SElementType *)realloc(base, sizeof(SElementType)*(size+1));
+            base = (SElementType *)realloc(base, sizeof(SElementType) * (size + 1));
             top = base + size;
             size++;
         }
@@ -41,14 +40,17 @@ public:
     }
     void pop()
     {
-        if (size==0) return;
+        if (size == 0)
+            return;
         top--;
         size--;
     }
-    void clearStack(){
+    void clearStack()
+    {
         top = base;
     }
-    void DestroyStack(){
+    void DestroyStack()
+    {
         free(base);
     }
     void StackTraverse()
@@ -56,18 +58,31 @@ public:
         SElementType *Pointer = base;
         for (int i = 0; i < size; i++)
         {
-            cout << "第" << i + 1 << "个数字是:" << *(Pointer++) << endl;
+            cout << "第" << i + 1 << "个字符是:" << (char)*(Pointer++) << endl;
         }
     }
 };
 
+bool Compare(char a, char b){
+    if (a =='[' && b == ']') return true;
+    if (a == '(' && b == ')') return true;
+    return false;
+}
+
 int main(int argc, char const *argv[])
 {
+    string str = "[([])]";
     Stack s(10);
-    s.push(1);
-    s.push(2);
-    s.GetTop();
-    s.pop();
+    for (int i = 0; i < sizeof(str) / sizeof(str[0]); i++)
+    {
+        if (Compare(s.GetTop(),str[i]))
+        {
+            s.pop();
+        }
+        else
+        {
+            s.push(str[i]);
+        }
+    }
     s.StackTraverse();
-    return 0;
 }
