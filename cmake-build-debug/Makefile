@@ -123,32 +123,32 @@ DataHomework/fast:
 	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/build
 .PHONY : DataHomework/fast
 
-10-8Data/实验3/main.o: 10-8Data/实验3/main.cpp.o
+10-14C++/作业/9.3/main.o: 10-14C++/作业/9.3/main.cpp.o
 
-.PHONY : 10-8Data/实验3/main.o
+.PHONY : 10-14C++/作业/9.3/main.o
 
 # target to build an object file
-10-8Data/实验3/main.cpp.o:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-8Data/实验3/main.cpp.o
-.PHONY : 10-8Data/实验3/main.cpp.o
+10-14C++/作业/9.3/main.cpp.o:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-14C++/作业/9.3/main.cpp.o
+.PHONY : 10-14C++/作业/9.3/main.cpp.o
 
-10-8Data/实验3/main.i: 10-8Data/实验3/main.cpp.i
+10-14C++/作业/9.3/main.i: 10-14C++/作业/9.3/main.cpp.i
 
-.PHONY : 10-8Data/实验3/main.i
+.PHONY : 10-14C++/作业/9.3/main.i
 
 # target to preprocess a source file
-10-8Data/实验3/main.cpp.i:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-8Data/实验3/main.cpp.i
-.PHONY : 10-8Data/实验3/main.cpp.i
+10-14C++/作业/9.3/main.cpp.i:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-14C++/作业/9.3/main.cpp.i
+.PHONY : 10-14C++/作业/9.3/main.cpp.i
 
-10-8Data/实验3/main.s: 10-8Data/实验3/main.cpp.s
+10-14C++/作业/9.3/main.s: 10-14C++/作业/9.3/main.cpp.s
 
-.PHONY : 10-8Data/实验3/main.s
+.PHONY : 10-14C++/作业/9.3/main.s
 
 # target to generate assembly for a file
-10-8Data/实验3/main.cpp.s:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-8Data/实验3/main.cpp.s
-.PHONY : 10-8Data/实验3/main.cpp.s
+10-14C++/作业/9.3/main.cpp.s:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-14C++/作业/9.3/main.cpp.s
+.PHONY : 10-14C++/作业/9.3/main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataHomework"
-	@echo "... 10-8Data/实验3/main.o"
-	@echo "... 10-8Data/实验3/main.i"
-	@echo "... 10-8Data/实验3/main.s"
+	@echo "... 10-14C++/作业/9.3/main.o"
+	@echo "... 10-14C++/作业/9.3/main.i"
+	@echo "... 10-14C++/作业/9.3/main.s"
 .PHONY : help
 
 
