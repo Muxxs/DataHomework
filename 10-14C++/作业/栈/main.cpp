@@ -43,7 +43,13 @@ public:
         top--;
         size--;
     }
-    void show_value()
+    void clearStack(){
+        top = base;
+    }
+    void DestroyStack(){
+        free(base);
+    }
+    void StackTraverse()
     {
         SElementType *Pointer = base;
         for (int i = 0; i < size; i++)
