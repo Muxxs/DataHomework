@@ -1,4 +1,6 @@
-
+// Created by Muxxs on 2020/10/14
+// Copyright (c) 2020
+// All rights reserved
 #include <iostream>
 
 using namespace std;
