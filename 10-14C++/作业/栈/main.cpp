@@ -18,6 +18,9 @@ public:
         top = base;
         size = 0;
     }
+    void GetTop(){
+        cout << "Top: " << *(top-1) << endl;
+    }
     void push(SElementType s)
     {
         *(top++) = s;
@@ -41,6 +44,7 @@ int main(int argc, char const *argv[])
     Stack s(10);
     s.push(1);
     s.push(2);
+    s.GetTop();
     s.pop();
     s.show_value();
     return 0;
