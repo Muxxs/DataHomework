@@ -39,6 +39,7 @@ public:
     }
     void pop()
     {
+        if (size==0) return;
         top--;
         size--;
     }
