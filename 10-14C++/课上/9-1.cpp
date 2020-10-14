@@ -6,7 +6,7 @@
 using namespace std;
 class Time
 {public:
-    Time(int Hour,int Min,int Sec);
+    Time(int Hour, int Min, int Sec);
     Time(int Hour, int Min);
     Time(int Hour);
 

@@ -9,8 +9,8 @@ using namespace std;
 class Date
 {
 public:
-    Date(int = 1, int = 1, int = 2005);
-    void display() const;
+    Date(int = 1, int = 1, int = 2005); //默认为 1， 1， 2005
+    void display();
 
 private:
     int month;
@@ -20,7 +20,7 @@ private:
 
 Date::Date(int m, int d, int y) : month(m), day(d), year(y) {}
 
-void Date::display() const
+void Date::display()
 {
     cout << month << "/" << day << "/" << year << endl;
 }
