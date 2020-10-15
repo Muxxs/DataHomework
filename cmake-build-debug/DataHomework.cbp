@@ -83,9 +83,6 @@
 		<Unit filename="/Users/wangjiao/Desktop/编程相关/DataHomework/10-15Data/实验/Expression.cpp">
 			<Option target="DataHomework"/>
 		</Unit>
-		<Unit filename="/Users/wangjiao/Desktop/编程相关/DataHomework/10-15Data/实验/brackets.cpp">
-			<Option target="DataHomework"/>
-		</Unit>
 		<Unit filename="/Users/wangjiao/Desktop/编程相关/DataHomework/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

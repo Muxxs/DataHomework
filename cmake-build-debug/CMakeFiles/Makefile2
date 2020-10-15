@@ -74,12 +74,12 @@ clean: CMakeFiles/DataHomework.dir/clean
 CMakeFiles/DataHomework.dir/all:
 	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/depend
 	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangjiao/Desktop/编程相关/DataHomework/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target DataHomework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangjiao/Desktop/编程相关/DataHomework/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target DataHomework"
 .PHONY : CMakeFiles/DataHomework.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DataHomework.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangjiao/Desktop/编程相关/DataHomework/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangjiao/Desktop/编程相关/DataHomework/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DataHomework.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangjiao/Desktop/编程相关/DataHomework/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/DataHomework.dir/rule

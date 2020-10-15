@@ -11,6 +11,8 @@ using namespace std;
 typedef bool Status;
 #define OK true;
 #define ERROR false;
+
+
 typedef struct Data{
     int data;
     Data * Next;
@@ -26,6 +28,7 @@ Status InitStack(LinkStack &S){
     S.L=NULL;
     return OK;
 }
+
 
 Status DestroyStack(LinkStack &S){
     ElemType * NextElemtype;
@@ -56,6 +59,17 @@ Status Pop(LinkStack &S, ElemType &e){
     return OK;
 }
 
+Status ClearStack(LinkStack &S,ElemType){
+    while (S.L->Next!=NULL){
+        ElemType * NextElemType = S.L->Next;
+        free(S.L);
+        S.L=NextElemType;
+    }
+    free(S.L);
+    S.L=NULL;
+    S.length=0;
+}
+
 Status GetTop(LinkStack &S,ElemType &e){
     if (S.length==0) return ERROR;
     e.data = S.L->data;
@@ -81,26 +95,35 @@ ElemType MakeElem(int data){
     return *Res;
 }
 
+bool
+
 int main(){
-    string Str = "1+2*3-4";
+    string Str = "1+22*3-4";
     LinkStack Num; // 数栈
+    LinkStack Symbol; // 数栈
     ElemType New,Trash;
     InitStack(Num);
+    InitStack(Symbol);
     bool isNumber= false;
-
     for(char i : Str){
         if (i>=48 and i <= 57){
             if (!isNumber){
-                MakeElem(atoi(reinterpret_cast<const char *>(i)));
+                New = MakeElem(atoi(&i));
                 Push(Num,New);
+                isNumber= true;
             } else {
                 GetTop(Num,New);
-                New = MakeElem(New.data*10+atoi(reinterpret_cast<const char *>(i)));
+                New = MakeElem(New.data*10+atoi(&i));
                 Pop(Num,Trash);
-
+                Push(Num,New);
+                isNumber= true;
             }
         } else{
-
+            isNumber = false;
+            New = MakeElem(i);
+            Push(Symbol,New);
         }
     }
+    StackTraverse(Symbol);
+    StackTraverse(Num);
 };

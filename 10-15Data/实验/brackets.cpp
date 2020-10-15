@@ -70,6 +70,17 @@ Status StackTraverse(LinkStack S){
     return OK;
 }
 
+Status ClearStack(LinkStack &S,ElemType){
+    while (S.L->Next!=NULL){
+        ElemType * NextElemType = S.L->Next;
+        free(S.L);
+        S.L=NextElemType;
+    }
+    free(S.L);
+    S.L=NULL;
+    S.length=0;
+}
+
 ElemType MakeElem(int data){
     ElemType *Res;
     Res = (ElemType *)malloc(sizeof(ElemType));
