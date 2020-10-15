@@ -123,32 +123,59 @@ DataHomework/fast:
 	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/build
 .PHONY : DataHomework/fast
 
-10-14C++/作业/9.3/main.o: 10-14C++/作业/9.3/main.cpp.o
+10-15Data/实验/Expression.o: 10-15Data/实验/Expression.cpp.o
 
-.PHONY : 10-14C++/作业/9.3/main.o
+.PHONY : 10-15Data/实验/Expression.o
 
 # target to build an object file
-10-14C++/作业/9.3/main.cpp.o:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-14C++/作业/9.3/main.cpp.o
-.PHONY : 10-14C++/作业/9.3/main.cpp.o
+10-15Data/实验/Expression.cpp.o:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.o
+.PHONY : 10-15Data/实验/Expression.cpp.o
 
-10-14C++/作业/9.3/main.i: 10-14C++/作业/9.3/main.cpp.i
+10-15Data/实验/Expression.i: 10-15Data/实验/Expression.cpp.i
 
-.PHONY : 10-14C++/作业/9.3/main.i
+.PHONY : 10-15Data/实验/Expression.i
 
 # target to preprocess a source file
-10-14C++/作业/9.3/main.cpp.i:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-14C++/作业/9.3/main.cpp.i
-.PHONY : 10-14C++/作业/9.3/main.cpp.i
+10-15Data/实验/Expression.cpp.i:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.i
+.PHONY : 10-15Data/实验/Expression.cpp.i
 
-10-14C++/作业/9.3/main.s: 10-14C++/作业/9.3/main.cpp.s
+10-15Data/实验/Expression.s: 10-15Data/实验/Expression.cpp.s
 
-.PHONY : 10-14C++/作业/9.3/main.s
+.PHONY : 10-15Data/实验/Expression.s
 
 # target to generate assembly for a file
-10-14C++/作业/9.3/main.cpp.s:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-14C++/作业/9.3/main.cpp.s
-.PHONY : 10-14C++/作业/9.3/main.cpp.s
+10-15Data/实验/Expression.cpp.s:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.s
+.PHONY : 10-15Data/实验/Expression.cpp.s
+
+10-15Data/实验/brackets.o: 10-15Data/实验/brackets.cpp.o
+
+.PHONY : 10-15Data/实验/brackets.o
+
+# target to build an object file
+10-15Data/实验/brackets.cpp.o:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/brackets.cpp.o
+.PHONY : 10-15Data/实验/brackets.cpp.o
+
+10-15Data/实验/brackets.i: 10-15Data/实验/brackets.cpp.i
+
+.PHONY : 10-15Data/实验/brackets.i
+
+# target to preprocess a source file
+10-15Data/实验/brackets.cpp.i:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/brackets.cpp.i
+.PHONY : 10-15Data/实验/brackets.cpp.i
+
+10-15Data/实验/brackets.s: 10-15Data/实验/brackets.cpp.s
+
+.PHONY : 10-15Data/实验/brackets.s
+
+# target to generate assembly for a file
+10-15Data/实验/brackets.cpp.s:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/brackets.cpp.s
+.PHONY : 10-15Data/实验/brackets.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataHomework"
-	@echo "... 10-14C++/作业/9.3/main.o"
-	@echo "... 10-14C++/作业/9.3/main.i"
-	@echo "... 10-14C++/作业/9.3/main.s"
+	@echo "... 10-15Data/实验/Expression.o"
+	@echo "... 10-15Data/实验/Expression.i"
+	@echo "... 10-15Data/实验/Expression.s"
+	@echo "... 10-15Data/实验/brackets.o"
+	@echo "... 10-15Data/实验/brackets.i"
+	@echo "... 10-15Data/实验/brackets.s"
 .PHONY : help
 
 

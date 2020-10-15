@@ -27,6 +27,6 @@ void Date::display()
 
 int main()
 {
-    Date Bir(1);
+    Date Bir(10);
     Bir.display();
 }

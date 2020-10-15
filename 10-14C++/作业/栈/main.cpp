@@ -59,6 +59,11 @@ public:
             cout << "第" << i + 1 << "个数字是:" << *(Pointer++) << endl;
         }
     }
+    ~Stack(){
+        DestroyStack();
+        delete base;
+        delete top;
+    }
 };
 
 int main(int argc, char const *argv[])

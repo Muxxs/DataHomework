@@ -16,6 +16,7 @@ private:
     char size;
 
 public:
+
     Stack(int Size)
     {
         base = (SElementType *)malloc(sizeof(SElementType) * Size);
@@ -62,6 +63,11 @@ public:
         {
             cout << "第" << i + 1 << "个字符是:" << *(Pointer++) << endl;
         }
+    }
+    ~Stack(){
+        DestroyStack();
+        delete base;
+        delete top;
     }
 };
 
