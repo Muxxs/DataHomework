@@ -57,27 +57,27 @@ include CMakeFiles/DataHomework.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DataHomework.dir/flags.make
 
-CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.o: CMakeFiles/DataHomework.dir/flags.make
-CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.o: ../10-15Data/实验/Expression.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangjiao/Desktop/编程相关/DataHomework/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.o -c /Users/wangjiao/Desktop/编程相关/DataHomework/10-15Data/实验/Expression.cpp
+CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.o: CMakeFiles/DataHomework.dir/flags.make
+CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.o: ../10-21/homework/平均成绩.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangjiao/Desktop/编程相关/DataHomework/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.o -c /Users/wangjiao/Desktop/编程相关/DataHomework/10-21/homework/平均成绩.cpp
 
-CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangjiao/Desktop/编程相关/DataHomework/10-15Data/实验/Expression.cpp > CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.i
+CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangjiao/Desktop/编程相关/DataHomework/10-21/homework/平均成绩.cpp > CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.i
 
-CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangjiao/Desktop/编程相关/DataHomework/10-15Data/实验/Expression.cpp -o CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.s
+CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangjiao/Desktop/编程相关/DataHomework/10-21/homework/平均成绩.cpp -o CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.s
 
 # Object files for target DataHomework
 DataHomework_OBJECTS = \
-"CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.o"
+"CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.o"
 
 # External object files for target DataHomework
 DataHomework_EXTERNAL_OBJECTS =
 
-DataHomework: CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.o
+DataHomework: CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.o
 DataHomework: CMakeFiles/DataHomework.dir/build.make
 DataHomework: CMakeFiles/DataHomework.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wangjiao/Desktop/编程相关/DataHomework/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable DataHomework"

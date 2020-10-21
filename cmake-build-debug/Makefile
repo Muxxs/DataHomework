@@ -123,32 +123,32 @@ DataHomework/fast:
 	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/build
 .PHONY : DataHomework/fast
 
-10-15Data/实验/Expression.o: 10-15Data/实验/Expression.cpp.o
+10-21/homework/平均成绩.o: 10-21/homework/平均成绩.cpp.o
 
-.PHONY : 10-15Data/实验/Expression.o
+.PHONY : 10-21/homework/平均成绩.o
 
 # target to build an object file
-10-15Data/实验/Expression.cpp.o:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.o
-.PHONY : 10-15Data/实验/Expression.cpp.o
+10-21/homework/平均成绩.cpp.o:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.o
+.PHONY : 10-21/homework/平均成绩.cpp.o
 
-10-15Data/实验/Expression.i: 10-15Data/实验/Expression.cpp.i
+10-21/homework/平均成绩.i: 10-21/homework/平均成绩.cpp.i
 
-.PHONY : 10-15Data/实验/Expression.i
+.PHONY : 10-21/homework/平均成绩.i
 
 # target to preprocess a source file
-10-15Data/实验/Expression.cpp.i:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.i
-.PHONY : 10-15Data/实验/Expression.cpp.i
+10-21/homework/平均成绩.cpp.i:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.i
+.PHONY : 10-21/homework/平均成绩.cpp.i
 
-10-15Data/实验/Expression.s: 10-15Data/实验/Expression.cpp.s
+10-21/homework/平均成绩.s: 10-21/homework/平均成绩.cpp.s
 
-.PHONY : 10-15Data/实验/Expression.s
+.PHONY : 10-21/homework/平均成绩.s
 
 # target to generate assembly for a file
-10-15Data/实验/Expression.cpp.s:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/Expression.cpp.s
-.PHONY : 10-15Data/实验/Expression.cpp.s
+10-21/homework/平均成绩.cpp.s:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.s
+.PHONY : 10-21/homework/平均成绩.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataHomework"
-	@echo "... 10-15Data/实验/Expression.o"
-	@echo "... 10-15Data/实验/Expression.i"
-	@echo "... 10-15Data/实验/Expression.s"
+	@echo "... 10-21/homework/平均成绩.o"
+	@echo "... 10-21/homework/平均成绩.i"
+	@echo "... 10-21/homework/平均成绩.s"
 .PHONY : help
 
 

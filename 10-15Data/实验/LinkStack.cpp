@@ -23,7 +23,7 @@ Status InitStack(LinkStack &S){
     return OK;
 }
 
-Status ClearStack(LinkStack &S,ElemType){
+Status ClearStack(LinkStack &S){
     while (S.L->Next!=NULL){
         ElemType * NextElemType = S.L->Next;
         free(S.L);

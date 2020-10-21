@@ -95,10 +95,9 @@ ElemType MakeElem(int data){
     return *Res;
 }
 
-bool
 
 int main(){
-    string Str = "1+22*3-4";
+    string Str = "1+223*-4";
     LinkStack Num; // 数栈
     LinkStack Symbol; // 数栈
     ElemType New,Trash;

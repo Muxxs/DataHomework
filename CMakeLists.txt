@@ -3,4 +3,4 @@ project(DataHomework)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(DataHomework 10-15Data/实验/Expression.cpp)
+add_executable(DataHomework 10-21/homework/平均成绩.cpp)
