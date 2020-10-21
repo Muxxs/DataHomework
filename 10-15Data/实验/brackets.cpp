@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include <stdlib>
+#include <cstdlib>
 #include <string>
 using namespace std;
 typedef bool Status;
@@ -80,6 +80,7 @@ Status ClearStack(LinkStack &S,ElemType){
     free(S.L);
     S.L=NULL;
     S.length=0;
+    return OK;
 }
 
 ElemType MakeElem(int data){

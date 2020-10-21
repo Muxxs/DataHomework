@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/wangjiao/Desktop/编程相关/DataHomework/10-21/homework/平均成绩.cpp" "/Users/wangjiao/Desktop/编程相关/DataHomework/cmake-build-debug/CMakeFiles/DataHomework.dir/10-21/homework/平均成绩.cpp.o"
+  "/Users/wangjiao/Desktop/编程相关/DataHomework/10-15Data/实验/brackets.cpp" "/Users/wangjiao/Desktop/编程相关/DataHomework/cmake-build-debug/CMakeFiles/DataHomework.dir/10-15Data/实验/brackets.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
