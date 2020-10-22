@@ -95,6 +95,14 @@ ElemType MakeElem(int data){
     return *Res;
 }
 
+bool ConfirmSymbol(char symbol,LinkStack S){
+    ElemType Past;
+    GetTop(S,Past);
+    if ( (Past.data=='*' or Past.data == '\\') and symbol!='('  ) {
+        return true;
+    }else if (Past.data)
+}
+
 
 int main(){
     string Str = "1+223*-4";
@@ -119,6 +127,7 @@ int main(){
             }
         } else{
             isNumber = false;
+            if ()
             New = MakeElem(i);
             Push(Symbol,New);
         }
