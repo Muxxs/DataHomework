@@ -3,12 +3,11 @@
 //
 
 #include <iostream>
-#define OK true;
-#define ERROR false;
 using namespace std;
 
 typedef bool Status;
-
+#define OK true;
+#define ERROR false;
 typedef int QElemType;
 
 #define MAXQSIZE 10
@@ -43,12 +42,8 @@ Status DeQueue(SqQueue &Q, QElemType &e)
 {
     if (QueueEmpty(Q))
         return ERROR;
-    e = Q.base[Q.rear--];
-    if (Q.rear == -1)
-    {
-        Q.rear = MAXQSIZE;
-        return OK;
-    }
+    e = Q.base[Q.front++];
+    Q.front %= MAXQSIZE;
     return OK;
 }
 
