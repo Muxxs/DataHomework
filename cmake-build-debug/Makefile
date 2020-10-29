@@ -123,32 +123,32 @@ DataHomework/fast:
 	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/build
 .PHONY : DataHomework/fast
 
-10-15Data/实验/brackets.o: 10-15Data/实验/brackets.cpp.o
+10-15Data/实验/NewExpression.o: 10-15Data/实验/NewExpression.cpp.o
 
-.PHONY : 10-15Data/实验/brackets.o
+.PHONY : 10-15Data/实验/NewExpression.o
 
 # target to build an object file
-10-15Data/实验/brackets.cpp.o:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/brackets.cpp.o
-.PHONY : 10-15Data/实验/brackets.cpp.o
+10-15Data/实验/NewExpression.cpp.o:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/NewExpression.cpp.o
+.PHONY : 10-15Data/实验/NewExpression.cpp.o
 
-10-15Data/实验/brackets.i: 10-15Data/实验/brackets.cpp.i
+10-15Data/实验/NewExpression.i: 10-15Data/实验/NewExpression.cpp.i
 
-.PHONY : 10-15Data/实验/brackets.i
+.PHONY : 10-15Data/实验/NewExpression.i
 
 # target to preprocess a source file
-10-15Data/实验/brackets.cpp.i:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/brackets.cpp.i
-.PHONY : 10-15Data/实验/brackets.cpp.i
+10-15Data/实验/NewExpression.cpp.i:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/NewExpression.cpp.i
+.PHONY : 10-15Data/实验/NewExpression.cpp.i
 
-10-15Data/实验/brackets.s: 10-15Data/实验/brackets.cpp.s
+10-15Data/实验/NewExpression.s: 10-15Data/实验/NewExpression.cpp.s
 
-.PHONY : 10-15Data/实验/brackets.s
+.PHONY : 10-15Data/实验/NewExpression.s
 
 # target to generate assembly for a file
-10-15Data/实验/brackets.cpp.s:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/brackets.cpp.s
-.PHONY : 10-15Data/实验/brackets.cpp.s
+10-15Data/实验/NewExpression.cpp.s:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/NewExpression.cpp.s
+.PHONY : 10-15Data/实验/NewExpression.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataHomework"
-	@echo "... 10-15Data/实验/brackets.o"
-	@echo "... 10-15Data/实验/brackets.i"
-	@echo "... 10-15Data/实验/brackets.s"
+	@echo "... 10-15Data/实验/NewExpression.o"
+	@echo "... 10-15Data/实验/NewExpression.i"
+	@echo "... 10-15Data/实验/NewExpression.s"
 .PHONY : help
 
 
