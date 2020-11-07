@@ -123,32 +123,59 @@ DataHomework/fast:
 	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/build
 .PHONY : DataHomework/fast
 
-10-15Data/实验/NewExpression.o: 10-15Data/实验/NewExpression.cpp.o
+11-4C++/11-1.o: 11-4C++/11-1.cpp.o
 
-.PHONY : 10-15Data/实验/NewExpression.o
+.PHONY : 11-4C++/11-1.o
 
 # target to build an object file
-10-15Data/实验/NewExpression.cpp.o:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/NewExpression.cpp.o
-.PHONY : 10-15Data/实验/NewExpression.cpp.o
+11-4C++/11-1.cpp.o:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/11-4C++/11-1.cpp.o
+.PHONY : 11-4C++/11-1.cpp.o
 
-10-15Data/实验/NewExpression.i: 10-15Data/实验/NewExpression.cpp.i
+11-4C++/11-1.i: 11-4C++/11-1.cpp.i
 
-.PHONY : 10-15Data/实验/NewExpression.i
+.PHONY : 11-4C++/11-1.i
 
 # target to preprocess a source file
-10-15Data/实验/NewExpression.cpp.i:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/NewExpression.cpp.i
-.PHONY : 10-15Data/实验/NewExpression.cpp.i
+11-4C++/11-1.cpp.i:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/11-4C++/11-1.cpp.i
+.PHONY : 11-4C++/11-1.cpp.i
 
-10-15Data/实验/NewExpression.s: 10-15Data/实验/NewExpression.cpp.s
+11-4C++/11-1.s: 11-4C++/11-1.cpp.s
 
-.PHONY : 10-15Data/实验/NewExpression.s
+.PHONY : 11-4C++/11-1.s
 
 # target to generate assembly for a file
-10-15Data/实验/NewExpression.cpp.s:
-	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/10-15Data/实验/NewExpression.cpp.s
-.PHONY : 10-15Data/实验/NewExpression.cpp.s
+11-4C++/11-1.cpp.s:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/11-4C++/11-1.cpp.s
+.PHONY : 11-4C++/11-1.cpp.s
+
+11-5Data/BiTree.o: 11-5Data/BiTree.cpp.o
+
+.PHONY : 11-5Data/BiTree.o
+
+# target to build an object file
+11-5Data/BiTree.cpp.o:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/11-5Data/BiTree.cpp.o
+.PHONY : 11-5Data/BiTree.cpp.o
+
+11-5Data/BiTree.i: 11-5Data/BiTree.cpp.i
+
+.PHONY : 11-5Data/BiTree.i
+
+# target to preprocess a source file
+11-5Data/BiTree.cpp.i:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/11-5Data/BiTree.cpp.i
+.PHONY : 11-5Data/BiTree.cpp.i
+
+11-5Data/BiTree.s: 11-5Data/BiTree.cpp.s
+
+.PHONY : 11-5Data/BiTree.s
+
+# target to generate assembly for a file
+11-5Data/BiTree.cpp.s:
+	$(MAKE) -f CMakeFiles/DataHomework.dir/build.make CMakeFiles/DataHomework.dir/11-5Data/BiTree.cpp.s
+.PHONY : 11-5Data/BiTree.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataHomework"
-	@echo "... 10-15Data/实验/NewExpression.o"
-	@echo "... 10-15Data/实验/NewExpression.i"
-	@echo "... 10-15Data/实验/NewExpression.s"
+	@echo "... 11-4C++/11-1.o"
+	@echo "... 11-4C++/11-1.i"
+	@echo "... 11-4C++/11-1.s"
+	@echo "... 11-5Data/BiTree.o"
+	@echo "... 11-5Data/BiTree.i"
+	@echo "... 11-5Data/BiTree.s"
 .PHONY : help
 
 

@@ -34,7 +34,7 @@ Status GetHead(LinkQueue Q, QElemType &e)
 {
     if (QueueEmpty(Q))
         return ERROR;
-    e.data = Q.rear->data;
+    e.data = Q.front->data;
     return OK;
 }
 
@@ -46,6 +46,9 @@ Status DeQueue(LinkQueue &Q, QElemType &e)
     QElemType *Ele = Q.front->next;
     free(Q.front);
     Q.front = Ele;
+    if (Q.front==nullptr){
+        Q.rear=NULL;
+    }
     return OK;
 }
 
