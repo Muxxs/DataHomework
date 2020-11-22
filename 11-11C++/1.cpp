@@ -20,6 +20,7 @@ class GraduateStudent : public student{
 
 class Phd : public GraduateStudent{
     string school;
+    Phd(int num1,string name1,char sex1,tm birth1){}
 };
 
 int main(){
